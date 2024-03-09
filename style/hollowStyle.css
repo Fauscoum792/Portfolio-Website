@@ -1,0 +1,302 @@
+@import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
+
+body{
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(black 20%,white);
+    height: auto;
+}
+
+/*Start of menu nonsense*/
+#menuToggle{
+    position: relative;
+    margin-left: 30px;
+    z-index:1;
+}
+
+#menuToggle input{
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    left: -12.5px;
+    margin-top: -12.5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+#span1{
+    margin-top: 30px;
+}
+
+#menuToggle span{
+    display: block; /*makes each burger layer its own line*/
+    width: 33px;
+    height: 4px;
+    margin-bottom: 5px;
+    position: relative;
+    border-radius: 3px;
+    z-index: 1;
+    background-color: white;
+}
+
+/*Start of Menu Animation*/
+#menuToggle span {
+    transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1),
+        background 0.5s cubic-bezier(0.77, 0.2, 0.05, 1), opacity 0.55s ease;
+    transform-origin: 4px 0px; /* set to 4px 0px to specify the center of rotation for the transform property above. */
+}
+#menuToggle span:first-child { /*animate each layer seperatly*/
+    transform-origin: 0% 0%; /*sets the origin of the transform property to the top left corner of the element.*/
+}
+#menuToggle span:nth-last-child(2) {
+    transform-origin: 0% 100%; /*sets the origin of the transform property to the bottom left corner of the element.*/
+}
+#menuToggle input:checked ~ span {/* selects all span elements that come after an input element that is checked inside the #menuToggle element. */
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #232323;
+  }
+  #menuToggle input:checked ~ span:nth-last-child(2) {
+    transform: rotate(-45deg) translate(0, -1px);
+}
+#menuToggle input:checked ~ span:nth-last-child(3) { /* selects the third span element from the end that comes after an input element that is checked inside the #menuToggle element. */
+    opacity: 0; /* sets the opacity of the element to 0, making it invisible. */
+    transform: rotate(0deg) scale(0.2, 0.2); /* applies a rotation of 0 degrees and a scale of 0.2 to the element, making it very small and invisible.*/
+}
+
+#menuToggle input:checked ~ ul {
+    top: 0;
+    left:0;
+}
+/*End of Menu Animation*/
+
+#menu {
+    position: absolute; /* allow us to position the menu on top of the rest of the content. */
+    left: -300px;/* This property moves the menu outisde of the viewport*/
+    top: 0px; /*This property sets the distance between the top edge of the menu and the top edge of the #menuToggle div.*/
+    width: 200px; 
+    height: 200vmax;
+    margin: -100px 0 0 -50px;/* The negative margin values are used to move the menu up and to the left to center it vertically and horizontally within the #menuToggle div. */
+    padding: 50px;
+    padding-top: 125px;
+    background: #f2eded;
+    opacity: 70%;
+    list-style-type: none; /* removes the default bullet points of the list. */
+    -webkit-font-smoothing: antialiased; /*This property sets the font smoothing for webkit browsers. */
+    
+    transition: left 0.5s; /* This property sets the transition effect for the left property. This will create a smooth animation when the menu slides in from the left.*/
+}
+  
+#menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+#menu a:hover{
+    text-decoration: underline;
+    color: black;
+    transform: scale(1.2);
+}
+
+#menu a{
+    margin: 100px;
+}
+
+#menuToggle{
+    font-family: 'Press Start 2P';
+}
+
+
+/*End of menu nonsense*/  
+
+/*Header flag*/
+#wide {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding-top: 0;
+    opacity: 75%;
+}
+
+#logo {
+    display: flex;
+    justify-content: center;
+    width: 35%;
+    height: 35%;
+    margin: auto;
+    opacity: 75%;
+    margin-top: -7.5%;
+}
+/*End of Header Flag*/
+
+/*Start of Map Section*/
+#map{
+    float: left;
+    max-width: 40vmax;
+    margin-top: 7.5vmax;
+    margin-left: 7.5vmax;
+}
+
+#map {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: rgb(74, 45, 85); /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: .9s;
+}
+
+#map:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+}
+
+
+#t1, #p1{
+    color: white;
+    text-align: center;
+    margin: auto; 
+    float: right;
+    
+}
+
+#t1{
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    margin-right: 30px;   
+    margin-top: 13vmax;
+}
+
+#p1{
+    width: 35%;
+    margin-right: 75px;
+    margin-top: 10vmax;
+}
+/*End of Map Section*/
+
+/*Start of Mantis Section*/
+#charecter{
+    margin-top: 45vmax;
+    margin-left: 5vmax; 
+
+}
+
+#t2{
+    color: white;
+    max-width: 50vmax;
+}
+
+#p2{
+    color: white;
+    float: left;
+    max-width: 50vmax;
+}
+
+#mantislords{
+    float: right;
+    margin-right: 10vmax;
+    margin-top: -7.5vmax;
+    max-height: 30vmax;
+}
+
+#mantislords {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: rgb(49, 38, 77); /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: .9s;
+  }
+
+  #mantislords:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
+/*End of Mantis Section*/
+
+/*Start of Oom+Bottom Paragraph*/
+#oom{
+    position: relative;
+    top: 15vmax;
+    max-width: 65vmax;
+    display: block;
+    left: 15%;
+}
+
+#oom {
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: rgb(10, 166, 114); /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: .9s;
+  }
+  #oom:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+  }
+
+#t3, #p3{
+    top: 15vmax;
+    position: relative;
+    text-align: center;
+    width: 50vmax;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#t3{
+    margin-top: 5vmax;
+}
+/*End of Oom+Bottom Paragraph*/
+
+/*Start of Image Track*/
+#image-track {
+    margin-top: 20vmax;
+    display: flex;
+    justify-content: center;
+    gap: 4vmin;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+.trackimage{
+    max-height: 10vmax;
+}
+/*End of Image Track*/
