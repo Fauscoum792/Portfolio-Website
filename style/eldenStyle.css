@@ -1,110 +1,15 @@
 @import "https://fonts.googleapis.com/css?family=Press%20Start%202P";
 
+@font-face{
+  font-family: "Mantinia" ;
+  src: url(../images_inspiration/fonts/Mantinia\ Regular.otf);
+}
+
+
+
 body{
   margin:0;
   background:#e3e3e3;
-}
-  
-#title{
-  position: absolute;
-  top: -5vmax;
-  font-family:sans-serif;
-  font-size:17.5vmax;
-  color:#d3ed12;
-}
-
-.curtain {
-  top: -5vmax;
-  height:150vh;
-  position: relative;
-  z-index: 2;
-  background: #1d1d1d;
-  display:flex;
-  justify-content:center;
-  align-items:flex-end;
-  box-shadow: 0 24px 48px rgba(0,0,0,0.1), 0 20px 20px rgba(0,0,0,0.1);
-  align-items: flex-end;
-  }
-
-.grid-container1 {
-  position:relative;
-  display: grid;
-  grid-template:18vmax 18vmax / 24vmax 24vmax 24vmax 24vmax;
-  grid-gap: 1vmax;
-}
-
-.grid-container2 {
-  position:absolute;
-  display: grid;
-  grid-template:18vmax 18vmax / 24vmax 24vmax 24vmax 24vmax;
-  grid-gap: 1vmax;
-}
-  
-.item {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  max-width: 24vmax;
-  max-height: 18vmax;
-  z-index: 4;
-  transition: 1.3s ease;
-}
-
-.item2 {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-  max-width: 24vmax;
-  max-height: 18vmax;
-  z-index: 3;
-}
-
-.item:hover{
-  opacity: 0%;
-}
-
-
-#solid {
-  position: absolute;
-  bottom: -2vmax;
-  width: 100%;
-  height: 2vmax;
-  background-color: #1d1d1d;
-  z-index: 2;
-}
-
-
-.main{
-  position: fixed;
-  bottom:0;
-  height: 450px;
-  width: 100%;
-  background: #e3e3e3;
-  }
-  
-.reveal-main{
-  height: 300vmax;
-  background:#e3e3e3;
-}
-  
-.main {
-  color:white;
-  font-family:sans-serif;
-  font-size:100px;
-  text-align:center;
-}
-
-.active {
-  position:relative;
-  /* margin-top:-111px;*/
-  margin-top:-6%;
-  margin-top:-118px;
-  height:900px;
-}
-
-.activetwo {
-  height:10px;
-  position:absolute;
 }
 
 /*Start of menu nonsense*/
@@ -210,3 +115,224 @@ body{
 
 
 /*End of menu nonsense*/  
+
+/*Start of curtain div*/
+#title{
+  position: absolute;
+  top: -5vmax;
+  font-size:17.5vmax;
+  color:#d3ed12;
+  font-family: "Mantinia";
+}
+
+.curtain {
+  top: -5vmax;
+  height:150vh;
+  position: relative;
+  z-index: 2;
+  background: #1d1d1d;
+  display:flex;
+  justify-content:center;
+  align-items:flex-end;
+  box-shadow: 0 24px 48px rgba(0,0,0,0.1), 0 20px 20px rgba(0,0,0,0.1);
+  align-items: flex-end;
+  }
+
+.grid-container1 {
+  position:relative;
+  display: grid;
+  grid-template:18vmax 18vmax / 24vmax 24vmax 24vmax 24vmax;
+  grid-gap: 1vmax;
+}
+
+.grid-container2 {
+  position:absolute;
+  display: grid;
+  grid-template:18vmax 18vmax / 24vmax 24vmax 24vmax 24vmax;
+  grid-gap: 1vmax;
+}
+  
+.item {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  max-width: 24vmax;
+  max-height: 18vmax;
+  z-index: 4;
+  transition: 1.3s ease;
+}
+
+.item2 {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+  max-width: 24vmax;
+  max-height: 18vmax;
+  z-index: 3;
+}
+
+.item:hover{
+  opacity: 0%;
+}
+
+
+#solid {
+  position: absolute;
+  bottom: -2vmax;
+  width: 100%;
+  height: 2vmax;
+  background-color: #1d1d1d;
+  z-index: 2;
+}
+/*End of curtain div*/
+
+/*Start main div*/
+.main{
+  position: relative;
+  width: 100%;
+  background: #e3e3e3;
+  }
+  
+.reveal-main{
+  height: auto;
+  background:#e3e3e3;
+}
+  
+.main {
+  color:white;
+  font-family:sans-serif;
+  font-size:100px;
+  text-align:center;
+}
+
+/*Start of bottom pictures*/
+.parent { 
+  display: flex; 
+  flex-direction: column; 
+}
+.study{
+  margin-top: 10vmax;
+  max-width: 50vmax;
+  max-height: 40vmax;
+  }
+
+#margit{
+  margin-top: 5vmax;
+  float: left;
+  margin-left: 10vmax ;
+  }
+
+#malenia{
+  float: right;
+  margin-right: 10vmax;
+  }
+
+#radahn{
+  float: left;
+  margin-left: 10vmax;
+  }
+
+.title2{
+  font-size:2.5vmax;
+  color:black;
+  font-family: "Mantinia";
+  margin-top: 10vmax;
+}
+
+#margT{
+  margin-top: 5vmax;
+  float: right;
+}
+
+#malT{
+  margin-top: 10vmax;
+  float: left;
+}
+
+#radT{
+  margin-top: 10vmax;
+  float: right;
+}
+
+.paragraph{
+  margin: 2vmax;
+  position: relative;
+  font-size: 1vmax;
+  color: black;
+}
+
+#margit {
+  --g: 4px;     /* the gap */
+  --b: 12px;    /* border thickness*/
+  --c: rgb(198, 220, 32); /* the color */
+
+
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: .9s;
+  }
+
+#malenia {
+  --g: 4px;     /* the gap */
+  --b: 12px;    /* border thickness*/
+  --c: rgb(198, 92, 22); /* the color */
+
+
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: .9s;
+  }
+
+#radahn {
+  --g: 4px;     /* the gap */
+  --b: 12px;    /* border thickness*/
+  --c: rgb(235, 4, 4); /* the color */
+
+
+  padding: calc(var(--g) + var(--b));
+  --_c: #0000 0 25%, var(--c) 0 50%;
+  --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+  --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+  background:
+    var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+    var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+  background-size: 200% var(--b),var(--b) 200%;
+  cursor: pointer;
+  filter: grayscale(100%);
+  transition: .9s;
+  }
+/*End of bottom pictures*/
+/*End of main*/
+
+#acknoledgment{
+  margin-top: 20vmax;
+  background-color: black;
+  height: 7.5vmax;
+  width: 100%;
+  color: white;
+  font-size: 1.5vmax;
+  font-family: "Mantinia" ;
+  display: flex; 
+	justify-content: center; 
+	align-items: center;
+}
+
+#ack{
+  margin-top: 3vmax;
+}

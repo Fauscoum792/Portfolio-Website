@@ -15,12 +15,31 @@ body{
     transition: transform 0.3s ease;
 }
 
+.box{
+    border: .1vmax;
+    border-style: solid;
+    color: white;
+    width: 40vmin;
+    height: 56vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.trackWords{
+    color: white;
+    user-select: none;
+    font-size: 1.5vmax;
+    font-family: 'Courier New', Courier, monospace;
+}
+
 .image-link{
     text-decoration: none;
     color: inherit;
 }
 
-.image-link:hover .image{
+.image-link:hover .image, .box:hover{
     transform: scale(1.1);
 }
 
@@ -41,11 +60,7 @@ body{
     line-height:20px;
     display:flex;
     justify-content: center;
-    align-items:center;
-    text-align: center;
-    margin-left: 22px;
-    margin-right: 22px;
-    margin-top: 22px;
+    margin: 22px;
     padding-top: 50px;
     user-select: none;  
 }
@@ -55,8 +70,6 @@ body{
     font-size: 2vmax;
     font-family: 'Courier New', Courier, monospace;
     line-height: 20px;
-    display: flex;
-    justify-content: center;
     align-items: center;
     text-align: center;
     margin-left: auto;
@@ -74,8 +87,6 @@ body{
     color: white;
     font-size: 1vmax;
     font-family: 'Courier New', Courier, monospace;
-    justify-content: center;
-    align-items: center;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -88,4 +99,5 @@ body{
     user-select: none;
 
 }
+
 

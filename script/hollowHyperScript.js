@@ -31,5 +31,9 @@ document.addEventListener("DOMContentLoaded", function () {
     applyImageHoverEffect(document.getElementById('oom'));
     applyImageHoverEffect(document.getElementById('map'));
     applyImageHoverEffect(document.getElementById('hyper1'));
+    applyImageHoverEffect(document.getElementById('radahn'));
+    applyImageHoverEffect(document.getElementById('margit'));
+    applyImageHoverEffect(document.getElementById('malenia'));
+
 
 });

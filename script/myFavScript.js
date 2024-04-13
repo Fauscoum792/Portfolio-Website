@@ -3,22 +3,19 @@ document.addEventListener("DOMContentLoaded", function () {
     const images = track.getElementsByClassName("images");
     const imageName = document.getElementById("imageName");
     const imagePercentage = [
-        [-100, -83.333, "Hyper Light Drifter", "Colour", "#ca3cca"],
-        [-83.333, -66.666, "FTL: Faster Than Light", "Soundtrack", "#EC4343 "],
-        [-66.666, -50, "N++", "Gravity", "#1CE7B5 "],
-        [-50, -33.333, "Elden Ring", "Character Design", "#BDBEB5 "],
-        [-33.333, -16.666, "Hollow Knight", "Enviormental Storytelling", "#35B83D"],
-        [-16.666, 0, "Disco Elysium", "Writing", "#F5B407"],
+        [-100, -66.666, "Hyper Light Drifter", "Colour", "#ca3cca"],
+        [-66.666, -33.333, "Elden Ring", "Character Design", "#BDBEB5 "],
+        [-33.333, 0, "Hollow Knight", "Enviormental Storytelling", "#35B83D"],
       ];
 
 
     window.onmousedown = e => {//tracking when mouse is clicked for start of slider
-    track.dataset.mouseDownAt = e.clientX;  
+        track.dataset.mouseDownAt = e.clientX;  
     }
 
     window.onmouseup = () => {//tracks the position of the slider when you let go of mouse so it dosent reset
-    track.dataset.mouseDownAt = "0";
-    track.dataset.prevPercentage = track.dataset.percentage; 
+        track.dataset.mouseDownAt = "0";
+        track.dataset.prevPercentage = track.dataset.percentage; 
     }
 
     window.onmousemove = e => {  //Moves and animates the image track with mouse drag
