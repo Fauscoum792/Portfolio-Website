@@ -3,9 +3,11 @@ document.addEventListener("DOMContentLoaded", function () {
     const images = track.getElementsByClassName("images");
     const imageName = document.getElementById("imageName");
     const imagePercentage = [
-        [-100, -66.666, "Hyper Light Drifter", "Colour", "#ca3cca"],
-        [-66.666, -33.333, "Elden Ring", "Character Design", "#BDBEB5 "],
-        [-33.333, 0, "Hollow Knight", "Enviormental Storytelling", "#35B83D"],
+        [-100, -80, "Inspirations", null, null],
+        [-80, -60, "Hyper Light Drifter", "Colour", "#ca3cca"],
+        [-60, -40, "Elden Ring", "Character Design", "#d3ed12 "],
+        [-40, -20, "Hollow Knight", "Enviormental Storytelling", "#35B83D"],
+        [-20, 0, "About", null, null]
       ];
 
 
