@@ -9,60 +9,100 @@ body{
     min-height: 100%;
 }
 
-.container{
+/*image track example*/
+#mainMenu{
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title{
+    color: white;
+    user-select: none;
+}
+
+.image {
+    width: 40vmin;
+    height: 56vmin;
+    object-fit: cover;
+    object-position: center;
+    user-select: none;
+    transition: transform 0.3s ease;
+}
+
+.box{
+    border: .1vmax;
+    border-style: solid;
+    color: white;
+    width: 40vmin;
+    height: 56vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease;
+}
+
+.trackWords{
+    color: white;
+    user-select: none;
+    font-size: 1.5vmax;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.image-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.image-link:hover .image, .box:hover{
+    transform: scale(1.1);
+}
+
+#image-track {
+    display: flex;
+    gap: 4vmin;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(0%, -50%);
+}
+
+#imageName{
+    color: white;
+    font-size: 2vmax;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 20px;
     align-items: center;
     text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 75px;
+    transition: transform 0.5s ease-in-out; /* animation */
+    transform-origin: bottom;
+    user-select: none;
 }
 
-.container2{
-    text-align: center;
-    align-content: center;
-}
-
-#title{
-    color: white;
-    text-align: center;
-    font-size: 4vmax;
-}
-
-h2{
-    color: white;
-    font-size: 1.5vmax;
-    text-decoration: underline;
-}
-
-#p1{
+#gameAspect{
     color: white;
     font-size: 1vmax;
-    width: 35vmax;
-}
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+    position: absolute;
+    bottom: 40px;
+    transition: transform 0.5s ease-in-out; /* animation */
+    transform-origin: bottom;
+    user-select: none;
 
-ul{
-    color: white;
-    font-size: 1vmax;
-    width: 30vmax;
-    list-style: inside;
 }
-
-h3{
-    font-style: bold;
-    color: white;
-}
-
-#right{
-    float: right;
-    margin-right: 17vmax;
-}
-#left{
-    float: left;
-    margin-left: 17vmax;
-}
-
-#IA{
-    margin-top: 17.5vmax;
-}
+/*End of image track*/
 
 /*Start of menu nonsense*/
 #menuToggle{
@@ -167,4 +207,3 @@ h3{
   
   
   /*End of menu nonsense*/  
-  
