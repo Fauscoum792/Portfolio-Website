@@ -16,6 +16,15 @@ header{
 #logo{
     width: 60vmax;
 } 
+#monster{
+    position: absolute;
+    left: 0;
+    top: 0;
+    margin-top: 2.5vmax;
+    margin-left: 2.5vmax;
+    z-index: 0;
+    height: 30vmax;
+}
 
 #solid{
     z-index: 1;
@@ -29,17 +38,6 @@ header{
     transform-origin: left center;;
 }
 
-
-#monster{
-    position: absolute;
-    left: 0;
-    top: 0;
-    margin-top: 2.5vmax;
-    margin-left: 2.5vmax;
-    z-index: 0;
-    height: 30vmax;
-}
-
 #triangleText1{
     margin-top: 10vmax;
     margin-left: 2.5vmax;
@@ -47,6 +45,7 @@ header{
     font-size: 1vmax; width: 0px;
     border-top: 30vmax solid #840484;
     border-right: 30vmax solid black;
+    z-index: 2;
 }
 
 #tText1{
@@ -54,10 +53,11 @@ header{
     top: 44vmax;
     left: 3vmax; /* Move the text to the middle vertically */
     color: rgb(123, 194, 209);
-    z-index: 1;
 }
 
+
 #triangleText2{
+    position: relative;
     float: right;
     margin-top: -20vmax;
     margin-right: 2.5vmax;
@@ -65,22 +65,70 @@ header{
     font-size: 1vmax; width: 0px;
     border-bottom: 30vmax solid #840484;
     border-left: 30vmax solid black;
+    z-index: 0;
+}
+#triangleText3{
+    float: right;
+    margin-top: 10vmax;
+    margin-right: -30vmax;
+    width: 10vmax;
+    font-size: 1vmax; width: 0px;
+    border-top: 30vmax solid #840484;
+    border-left: 30vmax solid black;
+}
+
+#righthandtext{
+    position: relative;
+    float: right;
+    width: 35vmax;
+    height: 20vmax;
+    margin-right: 3vmax;
+    margin-top: 0vmax;
+    z-index: 3;
+    text-align: center;
+}
+
+#text2{
+    color:rgb(123, 194, 209) ;
+    z-index: 100;
 }
 
 #drifter{
     position: absolute;
     max-width: 35vmax;
-    right: 10vmax;
-    margin-top: -40vmax;     
+    margin-top: 60vmax;     
   
 }
 
 #hyper1{
     display: block;
-    max-width: 70%;
+    max-width: 60%;
     margin-right: auto;
     margin-left: auto;
-    margin-top: 20vmax;
+    margin-top: 25vmax;
+}
+
+#underLandscape{
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+#landscapeText{
+    color: rgb(123, 194, 209);
+}
+
+#images{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5vmax;
+}
+
+#blue{
+    max-width: 16vmax;
+    max-height: 9vmax
 }
 
 
@@ -109,10 +157,6 @@ header{
     --_p: 75%;
     filter: grayscale(0%);
   }
-
-
-
-
 
 /*Start of menu nonsense*/
 #menuToggle{
