@@ -11,43 +11,57 @@ body{
 
 /*image track example*/
 #mainMenu{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#mainMenu2{
+    color: white;
+    margin-top: 76vmin;
+    user-select: none;
+}
+
+#mainMenu3{
+    color: white;
+    user-select: none;
+    font-size: large;
+    margin-bottom: 10vmax;
 }
 
 .title{
-    color: white;
+    color: #840484;
     user-select: none;
 }
 
 .image {
-    width: 40vmin;
-    height: 56vmin;
-    object-fit: cover;
-    object-position: center;
-    user-select: none;
-    transition: transform 0.3s ease;
+  z-index: 2;
+  width: 40vmin;
+  height: 56vmin;
+  object-fit: cover;
+  object-position: center;
+  user-select: none;
+  transition: transform 0.3s ease;
 }
 
 .box{
-    border: .1vmax;
-    border-style: solid;
-    color: white;
-    width: 40vmin;
-    height: 56vmin;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    transition: transform 0.3s ease;
+  border: .1vmax;
+  border-style: solid;
+  color: white;
+  width: 40vmin;
+  height: 56vmin;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s ease;
 }
 
 .trackWords{
-    color: white;
-    user-select: none;
-    font-size: 1.5vmax;
-    font-family: 'Courier New', Courier, monospace;
+  color: white;
+  user-select: none;
+  font-size: 1.5vmax;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 .image-link{
@@ -66,6 +80,7 @@ body{
     left: 50%;
     top: 50%;
     transform: translate(0%, -50%);
+    z-index: 2;
 }
 
 #imageName{
@@ -103,6 +118,105 @@ body{
 
 }
 /*End of image track*/
+
+/*Start of Image Affect*/
+#imageAffect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#imageAffect3{
+    color: white;
+    user-select: none;
+}
+
+#imageAffect4{
+    color: white;
+    user-select: none;
+    font-size: large;
+}
+
+#imageAffect2{
+    max-width: 45vmax;
+    --g: 4px;     /* the gap */
+    --b: 12px;    /* border thickness*/
+    --c: rgb(205, 128, 21); /* the color */
+    
+    
+    padding: calc(var(--g) + var(--b));
+    --_c: #0000 0 25%, var(--c) 0 50%;
+    --_g1: repeating-linear-gradient(90deg ,var(--_c)) repeat-x;
+    --_g2: repeating-linear-gradient(180deg,var(--_c)) repeat-y;
+    background:
+      var(--_g1) var(--_p, 25%) 0   ,var(--_g2) 0    var(--_p,125%),
+      var(--_g1) var(--_p,125%) 100%,var(--_g2) 100% var(--_p, 25%);
+    background-size: 200% var(--b),var(--b) 200%;
+    cursor: pointer;
+    filter: grayscale(100%);
+    transition: .9s;
+}
+#imageAffect2:hover {
+    --_p: 75%;
+    filter: grayscale(0%);
+}
+
+/*End of Image Affect*/
+
+/*Start of Hamburger menu example*/
+#menuEx{
+  margin-top: 10vmax;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#menuEx2{
+  color: white;
+  user-select: none;
+}
+
+#menuEx3{
+  color: white;
+  user-select: none;
+  font-size: large;
+  margin-bottom: 22vmax;
+}
+
+#solid{
+  background-color: #840484;
+  height: 5vmax;
+  width: 50vmax;
+  position: absolute;
+  margin-top:-20vmax ;
+  margin-left: 5vmax;
+  z-index: 0;
+}
+
+#solid2{
+  background-color: #840484;
+  height: 100vmax;
+  width: 5vmax;
+  position: absolute;
+  margin-top:-120vmax ;
+  margin-left: 5vmax;
+  z-index: 1;
+  
+}
+
+#solid3{
+  background-color: #840484;
+  position: absolute;
+  font-size: 1vmax; width: 0px;
+  border-top: 10vmax solid #840484;
+  border-right: 10vmax solid black;
+  z-index: 0;
+  transform: rotate(45deg);
+  margin-top: -125vmax;
+  margin-left: 2.5vmax;
+}
 
 /*Start of menu nonsense*/
 #menuToggle{
