@@ -171,7 +171,6 @@ body{
     text-align: center;
     margin: auto; 
     float: right;
-    
 }
 
 #t1{
@@ -179,12 +178,14 @@ body{
     text-orientation: upright;
     margin-right: 30px;   
     margin-top: 13vmax;
+    font-size: x-large;
 }
 
 #p1{
     width: 35%;
     margin-right: 75px;
     margin-top: 10vmax;
+    font-size: large;
 }
 /*End of Map Section*/
 
@@ -195,21 +196,30 @@ body{
 
 }
 
-#t2{
+
+
+#t2a{
     color: white;
     max-width: 50vmax;
 }
 
-#p2{
+#t2b{
+    margin-top: 15vmax;
+    color: white;
+    max-width: 50vmax;
+}
+
+.p2{
     color: white;
     float: left;
     max-width: 50vmax;
+    font-size: large;
 }
 
 #mantislords{
     float: right;
     margin-right: 10vmax;
-    margin-top: -7.5vmax;
+    margin-top: -15vmax;
     max-height: 30vmax;
 }
 
@@ -282,6 +292,10 @@ body{
 
 #t3{
     margin-top: 5vmax;
+}
+
+#p3{
+    font-size: large;
 }
 /*End of Oom+Bottom Paragraph*/
 

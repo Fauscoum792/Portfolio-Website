@@ -1,71 +1,141 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Hollow Knight</title>
-        <meta name="author" content="Widger"> 
-        <link rel="stylesheet" href="../style/hollowStyle.css">
-        <script src="../script/hollowHyperScript.js"></script>
-    </head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hollow Knight</title>
+    <meta name="author" content="Widger" />
+    <link rel="stylesheet" href="../style/hollowStyle.css" />
+    <script src="../script/hollowHyperScript.js"></script>
+  </head>
 
-    <body>
+  <body>
+    <div id="menuToggle">
+      <input type="checkbox" />
+      <span id="span1"></span>
+      <!--This one has id to adjust position in css without messing the whole up -->
+      <span></span>
+      <span></span>
+      <ul id="menu">
+        <a href="index-Shakshuka.html"><li>Home</li></a>
+        <a href="inspiration.html"><li>Inspiration</li></a>
+        <a href="about.html"><li>About</li></a>
+      </ul>
+    </div>
 
-        <div id="menuToggle">
-            <input type="checkbox"/>
-            <span id="span1"></span> <!--This one has id to adjust position in css without messing the whole up -->
-            <span></span>
-            <span></span>
-            <ul id="menu">
-                <a href="index-Shakshuka.html" ><li>Home</li></a>
-                <a href="#" ><li>Refrences</li></a>
-                <a href="about.html" ><li>About</li></a>
-            </ul>
-        </div>
+    <header>
+      <img id="wide" src="../images_inspiration/hk/hkWide.jpg" />
+      <img id="logo" src="../images_inspiration/hk/Hollow_Knight_Logo.webp" />
+    </header>
 
-        <header>
-            <img id="wide" src="../images_inspiration/hk/hkWide.jpg">
-            <img id="logo" src="../images_inspiration/hk/Hollow_Knight_Logo.webp" >   
-        </header>
+    <div id="opening">
+      <p id="p1">
+        Hollow Knight is an indie metroidvania developed by Team Cherry and
+        released in 2017. With a team 3 people plus one composer Team Cherry has
+        created a shining beacon of what a videogame can be. With a breathtaking
+        visual style, varied and dynamic enemies, some of the most celebrated
+        boss fights outside if a Miyazaki title and a soundtrack that has been
+        of of my most listed to albums for 4 years straight. While Hollow Knight
+        knocks it out of the park with every aspect of the game, I believe that
+        its defining feature would be the design and execution of its various
+        environments.<br />
+        The game is set within the lands of Hollownest, a once great
+        civilisation brought low by the grim combination of being abandoned by
+        their god king and a blight that reduces the noble bugs of Hollownest to
+        mere beasts. With the thematic guidelines of each area of this game once
+        having been part of this grand kingdom, Team Cherry manges to create a
+        plethora of unique and memorable areas that still manage to combine
+        towards a cohesive wholes. While Team Cherry uses countless methods in
+        order to make these areas such an important aspect of the game, their
+        are 3 specific techniques that stand out to me. Those 3 are the use of
+        distinct colour and lighting levels to visually separate each level,
+        different musical tracks in order to have auditory separation and the
+        use of in world logic in order to create a greater sense of adventure.
+      </p>
+      <h2 id="t1">Map of Hollownest</h2>
+      <img id="map" src="../images_inspiration/hk/map.webp" />
+    </div>
 
-        <div id="opening"> 
-            <p id="p1">Hollow Knight gives a unique look upon the fall of a civilisation and the variety of life that rose to dwell in its ruins and feast on its corpse. <br>
-                The colour motives of each biome lead to a dual purpose of making each area easily distinguishable and grounding the main themes of each location
-                Dusty grey for the once well trodden path of the forgotten crossroads. The verdant life overtaking the ruins in Greenpath and the decaying corpse of the once opulent City of Tears. <br>
-                The lands of Hollownest are populated by its many denizens, benign or otherwise. From the forgotten founder god who even now corrupts the bugs who forsook him, reducing a grand civilisation to base savagery with a light that once brought life, to a beetle who loves maps and his wife.
-            </p>
-            <h2 id="t1">Map of Hollownest </h2>  
-            <img id="map" src="../images_inspiration/hk/map.webp">     
-        </div>
+    <div id="charecter">
+      <h2 id="t2a">Colour</h2>
+      <p class="p2">
+        From the soft blues and grays in the “City of Tears” that invoke a sense
+        of loss and melacholy to the vibrant greens of the aptly named “Green
+        path” that creates a feeling of jaunty adventure. Hollow Knight also
+        utilises where the lighting in each scene to direct the player both
+        physically and psychologically, Team Cherry will dim all light sources
+        bar a luminous glow from the main character in order to create a feeling
+        of isolation or have lamp posts subtly guiding you along the intended
+        path.
+      </p>
+      <h2 id="t2b">Music</h2>
+      <p class="p2">
+        Each area of this world is also companioned with a beautiful piece
+        written and composed by Christopher Larkin. Each area has a distinct
+        theme that is somehow both able to fade into the background during the
+        more action packed exploration focused aspects of the game and yet rise
+        to the forefront during the more introspective areas, such as when you
+        are resting at a bench. On top of Christopher Larkins beautiful ambient
+        music his boss themes tend to blow your breath away, with a special
+        mention for the Mantis Lords fight which uses a harpsichord and slaps.
+      </p>
+      <img id="mantislords" src="../images_inspiration/hk/mantisLords.png" />
+    </div>
 
-        <div id="charecter">
-            <h2 id="t2">Lorem Ipsum</h2>
-            <p id="p2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id turpis dignissim, sollicitudin dui eget, auctor ligula. Donec facilisis sagittis felis nec rhoncus. Fusce vehicula, justo et tempus aliquet, metus ante gravida dolor, eu placerat dui felis id lacus. Proin eleifend dolor ex, et laoreet lacus iaculis in. Vivamus vel ligula ipsum. Sed augue ex, tristique non tortor eu, sodales tempus nisl. Vivamus arcu nisl, blandit a fringilla non, varius quis tellus. Aenean malesuada sem maximus massa eleifend, eget condimentum neque mattis. Cras gravida orci et lobortis pretium. Fusce sit amet eros eu nibh aliquet iaculis. Quisque in tortor augue. Donec arcu tellus, feugiat in justo non, imperdiet tristique dui. Aenean hendrerit erat in orci ultrices, sit amet placerat risus semper. In ex odio, pretium in ultricies sed, accumsan eu mi. Quisque mattis mollis ex non faucibus.
-                Maecenas consectetur nisi a bibendum sodales. Donec felis nisl, aliquet id finibus vel, elementum nec nisi. Nulla nisl mauris, lacinia sed suscipit quis, iaculis in arcu. Aenean tristique, ante sit amet accumsan eleifend, libero turpis suscipit nisl, ut aliquam dolor quam quis nunc. Mauris condimentum lobortis metus, id luctus enim. Pellentesque ac mollis neque. Donec convallis quam sed ante sodales, nec faucibus nunc consequat. Aenean non posuere tellus, sit amet consectetur ipsum. Quisque faucibus tristique lectus, facilisis luctus enim luctus ultricies. Donec ut ornare diam. Ut erat risus, varius a erat sit amet, pretium consectetur orci.
-            </p>
-            <img id="mantislords" src="../images_inspiration/hk/mantisLords.png">
-        </div>
+    <div>
+      <img id="oom" src="../images_inspiration/hk/lakeOoom.webp" />
+      <h2 id="t3">Cohesive Worldbuilding</h2>
+      <p id="p3">
+        As for how in world logic affects the environments of the game, I
+        believe that when you the player are able to understand and parse the
+        reason and logic behind the placement of areas it both creates a deeper
+        level of investment and also a greater sense of adventure. For examples
+        the City a Tears a crumbling once great metropolis is an underground
+        City where it constantly rains. Having the centre of this civilisation
+        be a rainy and sober forgotten grave is very interesting but what truly
+        increases your deep appreciation for the level of detail in this game
+        and your own sense of adventure is when you explore the blue lake
+        directly above the city of tears and realise why is is constantly
+        raining ( its because theirs a lake above it).
+      </p>
+    </div>
 
-        <div>
-            <img id="oom" src="../images_inspiration/hk/lakeOoom.webp">
-            <h2 id="t3">Lorem Ipsum </h2>
-            <p id="p3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer mattis id risus ultricies auctor.
-                Duis eget fringilla nisi. Nunc euismod convallis nisi, non tempor leo elementum non. Phasellus tempus egestas pharetra. Nulla maximus quam ac ex venenatis tincidunt. Phasellus vulputate nunc sem, vel fermentum odio iaculis eu. Nunc vel neque sit amet magna ultrices ornare. Nullam pulvinar porttitor ante vel gravida. Pellentesque leo mi, dignissim eu quam at, tempor venenatis mi.
-            Etiam nunc est, ultrices et magna quis, dictum commodo erat. Fusce a suscipit mi. Donec ac vulputate mi. Ut in diam at quam varius ullamcorper in ac lacus. Fusce cursus eros in ante laoreet elementum. Proin ipsum est, placerat a ante a, fringilla pharetra velit. Proin consequat sit amet tortor ac condimentum. Pellentesque dignissim est non tellus pharetra congue. Cras eget ex cursus ex pulvinar ultrices id at sem. Aenean sed felis a erat sagittis blandit sed nec risus. Cras dictum tristique urna a interdum. Proin eros ante, cursus nec iaculis vitae, fermentum id eros. Nullam tristique nibh et neque gravida convallis. Donec facilisis, mi eget iaculis dapibus, nisl felis suscipit ex, pretium mollis turpis sem lacinia nisi. Praesent sed ullamcorper metus.
-            Praesent vitae mollis orci. Pellentesque finibus id lectus vel pulvinar. Quisque dignissim risus vel lorem vestibulum volutpat. Cras porta sed dui et accumsan. Donec sagittis quam et ipsum auctor volutpat. Sed finibus porttitor congue. Nullam quam dui, pharetra ac vestibulum mattis, ultrices vitae eros. Pellentesque id est nisi. Nam ac sagittis felis, in lacinia nulla. Suspendisse posuere imperdiet sapien, suscipit rutrum mi varius bibendum. Mauris ut mollis dui. Donec dapibus congue ultricies. Pellentesque ac turpis convallis, suscipit est eu, ultrices dui. Aliquam vestibulum egestas arcu. 
-        </p>
-        </div>
-
-        <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">   
-            <img class="trackimage" src="../images_inspiration/hk/b_shade.webp" draggable="false"/>   
-            <img class="trackimage" src="../images_inspiration/hk/B_Broken_Vessel.png" draggable="false"/>
-            <img class="trackimage" src="../images_inspiration/hk/hornet.png" draggable="false"/>
-            <img class="trackimage" src="../images_inspiration/hk/The-Radiance-Hollow-Knight.png" draggable="false" />
-            <img class="trackimage" src="../images_inspiration/hk/crystal.png" draggable="false" />        
-            <img class="trackimage" src="../images_inspiration/hk/quirrel.webp" draggable="false" />        
-            <img class="trackimage" src="../images_inspiration/hk/The_Hollow_Knight.webp" draggable="false" />   
-        </div>
-
-    </body>
-
+    <div id="image-track" data-mouse-down-at="0" data-prev-percentage="0">
+      <img
+        class="trackimage"
+        src="../images_inspiration/hk/b_shade.webp"
+        draggable="false"
+      />
+      <img
+        class="trackimage"
+        src="../images_inspiration/hk/B_Broken_Vessel.png"
+        draggable="false"
+      />
+      <img
+        class="trackimage"
+        src="../images_inspiration/hk/hornet.png"
+        draggable="false"
+      />
+      <img
+        class="trackimage"
+        src="../images_inspiration/hk/The-Radiance-Hollow-Knight.png"
+        draggable="false"
+      />
+      <img
+        class="trackimage"
+        src="../images_inspiration/hk/crystal.png"
+        draggable="false"
+      />
+      <img
+        class="trackimage"
+        src="../images_inspiration/hk/quirrel.webp"
+        draggable="false"
+      />
+      <img
+        class="trackimage"
+        src="../images_inspiration/hk/The_Hollow_Knight.webp"
+        draggable="false"
+      />
+    </div>
+  </body>
 </html>
